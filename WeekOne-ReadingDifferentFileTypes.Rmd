@@ -1,0 +1,37 @@
+---
+title: 'Week One: Reading different file types'
+output:
+  word_document: default
+  html_document: default
+---
+
+##Raw versus Processed Data
+* Raw data - Original source of the data
+* Processed data - Ready for analysis
+
+##Components of Tidy Data
+* Raw Data
+* Tidy Data Set
+* A code book of each variable and value (and units)
+* Explicit and exact recipe to go from 1 to 2,3
+
+##Downloading Files
+* Check for and create directory exists
+** if(!file.exists("data")) { dir.create("data")}
+** download.file()
+
+##Read Excel Files
+* library(xlsx)
+*r ead.xlsx
+
+##Read XML 
+* Refer to class notes for best example
+
+##Reading JSON
+* Library(jsonlite)
+** fromJSON("")
+
+##Writing data frames to JSON
+* toJSON(iris, pretty=true)
+
+##Read more about data.table
